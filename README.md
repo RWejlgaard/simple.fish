@@ -47,7 +47,9 @@ set; the rest are gated on env vars or project files.)
 mode, SHLVL > 1, background jobs.
 
 **Status** - exit code of last command (with signal name, e.g. `SIGINT`),
-duration (only when slow), wall-clock time. SSH/root shows `user@host`.
+duration (only when slow), wall-clock time. SSH/root shows `user@host`:
+
+![root over ssh](./.img/root-prompt.png)
 
 The prompt char is `>` (green), `>` red on non-zero exit, `#` red as root.
 
