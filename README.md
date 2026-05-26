@@ -74,6 +74,7 @@ set -g simple_time_format "+%H:%M:%S"
 set -g simple_show_jobs 1
 set -g simple_show_shlvl 1
 set -g simple_show_context auto           # auto | always | never
+set -g simple_force_user 0                # 1 to ignore root: keep user-mode symbols/context
 
 # Override symbols if you want flair
 set -g simple_char_prompt '>'

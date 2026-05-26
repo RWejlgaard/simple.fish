@@ -8,7 +8,7 @@ function _simple_context
         return
     end
     if test "$simple_show_context" = auto
-        if test $ssh -eq 0; and not fish_is_root_user
+        if test $ssh -eq 0; and not _simple_is_root
             return
         end
     end
@@ -18,7 +18,7 @@ function _simple_context
     set -l host (prompt_hostname)
 
     set -l out (set_color brblack)
-    if fish_is_root_user
+    if _simple_is_root
         set out "$out"(set_color red)"$user"(set_color brblack)
     else
         set out "$out$user"

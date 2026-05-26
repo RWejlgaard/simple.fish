@@ -22,6 +22,7 @@ set -q simple_time_format;        or set -g simple_time_format "+%H:%M:%S"
 set -q simple_show_jobs;          or set -g simple_show_jobs 1
 set -q simple_show_shlvl;         or set -g simple_show_shlvl 1
 set -q simple_show_context;       or set -g simple_show_context auto
+set -q simple_force_user;         or set -g simple_force_user 0
 
 # Symbols — plain ASCII; override if you want flair
 set -q simple_char_prompt;        or set -g simple_char_prompt '>'
