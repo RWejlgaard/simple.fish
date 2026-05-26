@@ -1,5 +1,5 @@
 function _simple_char --argument-names last_status
-    if fish_is_root_user
+    if _simple_is_root
         echo -n (set_color red)$simple_char_root(set_color normal)
         return
     end
