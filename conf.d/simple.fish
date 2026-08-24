@@ -20,7 +20,6 @@ set -q simple_duration_threshold; or set -g simple_duration_threshold 3000
 set -q simple_show_time;          or set -g simple_show_time 1
 set -q simple_time_format;        or set -g simple_time_format "+%H:%M:%S"
 set -q simple_show_jobs;          or set -g simple_show_jobs 1
-set -q simple_show_shlvl;         or set -g simple_show_shlvl 1
 set -q simple_show_context;       or set -g simple_show_context auto
 set -q simple_force_user;         or set -g simple_force_user 0
 
