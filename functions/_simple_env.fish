@@ -11,11 +11,6 @@ function _simple_env
         set -a out (set_color red)priv(set_color normal)
     end
 
-    set -l _simple_shlvl_base (set -q TMUX; and echo 2; or echo 1)
-    if test "$simple_show_shlvl" = 1; and set -q SHLVL; and test "$SHLVL" -gt $_simple_shlvl_base 2>/dev/null
-        set -a out (set_color brblack)"lvl:$SHLVL"(set_color normal)
-    end
-
     if test "$simple_show_jobs" = 1; and jobs -q
         set -l c (jobs -p | count)
         set -a out (set_color cyan)"jobs:$c"(set_color normal)

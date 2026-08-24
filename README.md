@@ -44,7 +44,7 @@ docker context. Only when relevant. (kubectl context shows whenever one is
 set; the rest are gated on env vars or project files.)
 
 **Environment** - direnv, nix-shell, distrobox/toolbox/container, private
-mode, SHLVL > 1, background jobs.
+mode, background jobs.
 
 **Status** - exit code of last command (with signal name, e.g. `SIGINT`),
 duration (only when slow), wall-clock time. SSH/root shows `user@host`:
@@ -72,7 +72,6 @@ set -g simple_duration_threshold 3000     # ms; show duration when slower
 set -g simple_show_time 1                 # 0 to hide
 set -g simple_time_format "+%H:%M:%S"
 set -g simple_show_jobs 1
-set -g simple_show_shlvl 1
 set -g simple_show_context auto           # auto | always | never
 set -g simple_force_user 0                # 1 to ignore root: keep user-mode symbols/context
 
